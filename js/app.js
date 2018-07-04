@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const secondHand = document.querySelector('.second-hand');
     const minHand = document.querySelector('.min-hand');
     const hourHand = document.querySelector('.hour-hand');
+    const allHands = document.querySelectorAll('.hand');
 
     function setDate () {
 
@@ -20,7 +21,11 @@ document.addEventListener("DOMContentLoaded", function(){
         const hoursDeg = ((hours / 12) * 360) + 90;
         hourHand.style.transform = `rotate(${hoursDeg}deg)`;
 
+        secondsDeg === 90 ? allHands.forEach (hand => hand.style.transition = 'none') : allHands.forEach(hand => hand.style.transition = '')
+
     }
+
+
 
     setInterval(setDate, 1000);
 
