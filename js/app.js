@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    const secondHand = document.querySelector('.second-hand');
-    const minHand = document.querySelector('.min-hand');
-    const hourHand = document.querySelector('.hour-hand');
-    const allHands = document.querySelectorAll('.hand');
+    const secondHand = document.querySelector('.second-hand'),
+        minHand = document.querySelector('.min-hand'),
+        hourHand = document.querySelector('.hour-hand'),
+        allHands = document.querySelectorAll('.hand');
 
     function setDate () {
 
@@ -30,5 +30,21 @@ document.addEventListener("DOMContentLoaded", function(){
     setInterval(setDate, 1000);
 
     setDate();
+
+
+
+    const allTimezones = ['Your local time', ...moment.tz.names()];
+    console.log(allTimezones);
+
+    const timezones = $('.timezones');
+
+    allTimezones.forEach((timezone, key) => {
+
+        timezones.append($('<option></option>')
+            .attr('key', key)
+            .text(timezone));
+
+    });
+
 
 });

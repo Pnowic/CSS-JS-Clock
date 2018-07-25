@@ -30,7 +30,6 @@ body {
             0 0 10px rgba(0,0,0,0.2);
 }
 
-
 .clock-face {
     position: relative;
     width: 100%;
@@ -44,8 +43,8 @@ body {
     border-radius: 50%;
     position: relative;
     background-color: white;
-    top: 47%;
-    left: 47%;
+    top: 48%;
+    left: 48%;
     z-index: 10;
 }
 
