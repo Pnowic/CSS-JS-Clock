@@ -10,6 +10,8 @@ body {
     margin: 0;
     font-size: 2rem;
     display:flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex:1;
     min-height: 100vh;
     align-items: center;
@@ -67,4 +69,16 @@ body {
 .hour-hand {
     width: 35%;
     left: 15%;
+}
+
+.ampm {
+    color: white;
+    font-size: 2em;
+    position: relative;
+    z-index: -1;
+    top: 15%;
+}
+
+select {
+    display: inline-block;
 }
