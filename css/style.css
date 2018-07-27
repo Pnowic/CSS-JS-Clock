@@ -20,7 +20,7 @@ body {
 .clock {
     width: 30rem;
     height: 30rem;
-    border:20px solid white;
+    border:20px solid black;
     border-radius:50%;
     margin:50px auto;
     position: relative;
@@ -58,7 +58,7 @@ body {
     top:50%;
     transform-origin: 100%;
     transform: rotate(90deg);
-    transition: all 0.05s;
+    transition: all 0.9s;
     border-radius: 10px;
 }
 
@@ -77,6 +77,43 @@ body {
     position: relative;
     z-index: -1;
     top: 15%;
+}
+
+.hour12,
+.hour1,
+.hour2,
+.hour3,
+.hour4,
+.hour5 {
+    height: 0.2em;
+    width: 100%;
+    background-color: transparent;
+    border-left: 1em solid white;
+    border-right: 1em solid white;
+    position: absolute;
+    top: 50.5%;
+    left: -6.6%;
+    z-index: -100;
+}
+
+.hour12 {
+    transform: rotate(90deg)
+}
+
+.hour1 {
+    transform: rotate(120deg)
+}
+
+.hour2 {
+    transform: rotate(150deg)
+}
+
+.hour4 {
+    transform: rotate(210deg)
+}
+
+.hour5 {
+    transform: rotate(240deg)
 }
 
 select {
