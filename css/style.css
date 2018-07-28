@@ -51,6 +51,7 @@ body {
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
     transform: translateY(-3px); /* account for the height of the clock hands */
+    color: white;
 }
 
 .spot {
@@ -91,12 +92,16 @@ body {
     left: 15%;
 }
 
-.ampm {
-    color: white;
-    font-size: 2em;
+.ampm,
+.date {
+    font-size: 1.5em;
     position: relative;
     z-index: -1;
     top: 15%;
+}
+
+.date {
+    top: 50%;
 }
 
 .hour12,
