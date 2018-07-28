@@ -1,4 +1,4 @@
-# CSS-JS-Clock
+# The World Clock
 
 Analog clock that show accurate time in any region or timezome.
 
