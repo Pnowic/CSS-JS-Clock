@@ -1,7 +1,7 @@
 html {
-    background:#018DED url(http://unsplash.it/1500/1000?image=901);
+    background: #D79848 url(http://unsplash.it/1500/1000?image=943);
     background-size:cover;
-    font-family:'helvetica neue';
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 10px;
 }
@@ -117,5 +117,17 @@ body {
 }
 
 select {
-    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: 'Raleway', sans-serif;
+
+    height: 50px;
+    width: 300px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    background: rgba(0,0,0,1) url(../icon/down-arrow-sketch.png) no-repeat 95% center;
+    color: white;
+    outline: 0;
+    border-radius: 5px;
+    border: 10px solid rgba(0,0,0,1);
 }
