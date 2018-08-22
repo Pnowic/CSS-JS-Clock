@@ -6,11 +6,10 @@ document.addEventListener("DOMContentLoaded", function(){
         allHands = document.querySelectorAll('.hand');
 
 
-    const allTimezones = ['Your local time', ...moment.tz.names()];
-    const timezonesSelect = $('.timezones');
+    const allTimezones = ['Your local time', ...moment.tz.names()],
+        timezonesSelect = $('.timezones');
 
     allTimezones.forEach((timezone, key) => {
-
         timezonesSelect.append($('<option>')
             .attr({key : key,
                 value : timezone
@@ -44,16 +43,12 @@ document.addEventListener("DOMContentLoaded", function(){
         hourHand.style.transform = `rotate(${hoursDeg}deg)`;
 
         const ampm = $('.ampm');
-
         hours >= 12 ? ampm.text('PM') : ampm.text('AM');
 
         const date = $('.date');
-
         currentTimezone === 'Your local time' ? date.text(now.format('Do MMMM YYYY')) : date.text(now.tz(`${currentTimezone}`).format('Do MMMM YYYY'));
 
-
         secondsDeg === 90 ? allHands.forEach (hand => hand.style.transition = 'none') : allHands.forEach(hand => hand.style.transition = '')
-
 
     }
 
